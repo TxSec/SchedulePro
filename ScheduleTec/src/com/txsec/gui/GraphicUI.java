@@ -430,8 +430,10 @@ public class GraphicUI extends JFrame implements ActionListener,MouseListener {
 
 	private void loadFiles() {
         String splitInfo[] = FileUtil.readAllFiles();
+        if(splitInfo != null){
         for(int i = 0; i < splitInfo.length-1;)
         	dtm.addRow(new Object[]{null,splitInfo[i++],splitInfo[i++],splitInfo[i++]});
+        }
 }
 
 
