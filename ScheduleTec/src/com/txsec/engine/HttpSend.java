@@ -15,7 +15,7 @@ public class HttpSend {
 	
 	public static void main(String args[]) throws IOException{
 		try {
-			String data = "username=13400419&password=5020&rememberusername=1";
+			String data = "username=&password=&rememberusername=1";
 			url = new URL("http://siveduc2.ittepic.edu.mx");
 			HttpURLConnection http = (HttpURLConnection) url.openConnection();
 			http.setRequestMethod("POST");
